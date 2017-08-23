@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mr Roboto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="/">Errbody</a>
+      <a href="/nojob">Will Work For Oil</a>
+      <a href="/job">Grinding...Gears</a>
+      </header>
+    <section>
+      {{#users}}
+        <div class="bots">
+        <h2>{{name}}</h2>
+        <img src="{{avatar}}">
+          {{#job}}
+            <h3>{{job}}</h3>
+            <h3>{{company}}</h3>
+          {{/job}}
+        </div>
+
+      {{/users}}
+    </section>
+  </body>
+
+</html>
